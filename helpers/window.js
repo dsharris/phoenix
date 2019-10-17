@@ -48,8 +48,7 @@ function findWindow ( windows = Window.all (), name = false, isNameOptional = fa
 
 function focusWindow ( name = false, isNameOptional = false, title = false, titleBlacklist = false, launch = true, callback = _.noop ) {
 
-  const space = Space.active (),
-        window = findWindow ( space.windows (), name, isNameOptional, title, titleBlacklist );
+  const window = findWindow ( Window.all(), name, isNameOptional, title, titleBlacklist );
 
   if ( window ) {
     window.unminimise ()

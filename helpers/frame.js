@@ -30,6 +30,11 @@ function getNamedFrame ( name ) {
     case 'sixths-4': return [0/3, 1/2, 1/3, 1/2];
     case 'sixths-5': return [1/3, 1/2, 1/3, 1/2];
     case 'sixths-6': return [2/3, 1/2, 1/3, 1/2];
+
+    case 'left-three-forths': return [0/4, 0, 3/4, 1];
+    case 'right-one-forth':   return [3/4, 0, 1/4, 1];
+    case 'left-two-thirds':   return [0/3, 0, 2/3, 1];
+    case 'right-one-third':   return [2/3, 0, 1/3, 1];
     /* DEFAULT */
     default: throw new Error ( `Undefined frame named: "${name}"` );
   }

@@ -21,6 +21,7 @@ require ( './shortcuts/sides.js' );
 require ( './shortcuts/sixths.js' );
 require ( './shortcuts/spaces.js' );
 require ( './shortcuts/thirds.js' );
+require ( './shortcuts/splits.js' );
 
 /* SYSTEM LOADED */
 
